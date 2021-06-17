@@ -9,14 +9,17 @@ We need to install a few packages before setting it up.
 On Ubuntu:
 
 ```bash
-apt install make g++ pkg-config
-apt install libusb-dev libudev-dev
-apt install libusb-1.0-0 libusb-1.0-0-dev
+sudo apt install make g++ pkg-config
+sudo apt install libusb-dev libudev-dev
+sudo apt install libusb-1.0-0 libusb-1.0-0-dev
 ```
 
 ## Project setup
 
+After cloning `cd` into that folder:
+
 ```bash
+cd keplr-example
 npm install
 ```
 
