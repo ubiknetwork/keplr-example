@@ -22,9 +22,9 @@ window.onload = async () => {
                     // The name of the chain to be displayed to the user.
                     chainName: "Ubiknetwork",
                     // RPC endpoint of the chain.
-                    rpc: "http://178.18.242.126:26657",
+                    rpc: "http://PUBLIC_IP:26657",
                     // REST endpoint of the chain.
-                    rest: "http://178.18.242.126:1317",
+                    rest: "http://PUBLIC_IP:1317",
                     // Staking coin information
                     stakeCurrency: {
                         // Coin denomination to be displayed to the user.
@@ -130,7 +130,7 @@ window.onload = async () => {
 
     // Initialize the gaia api with the offline signer that is injected by Keplr extension.
     const cosmJS = new SigningCosmosClient(
-        "http://178.18.242.126:1317",
+        "http://PUBLIC_IP:1317",
         accounts[0].address,
         offlineSigner,
     );
@@ -161,7 +161,7 @@ document.sendForm.onsubmit = () => {
 
         // Initialize the gaia api with the offline signer that is injected by Keplr extension.
         const cosmJS = new SigningCosmosClient(
-            "http://178.18.242.126:1317",
+            "http://PUBLIC_IP:1317",
             accounts[0].address,
             offlineSigner
         );
