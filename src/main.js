@@ -39,7 +39,7 @@ window.onload = async () => {
                     },
                     // (Optional) If you have a wallet webpage used to stake the coin then provide the url to the website in `walletUrlForStaking`.
                     // The 'stake' button in Keplr extension will link to the webpage.
-                    // walletUrlForStaking: "",
+                    walletUrlForStaking: "http://PUBLIC_IP:8000",
                     // The BIP44 path.
                     bip44: {
                         // You can only set the coin type of BIP44.
@@ -99,9 +99,9 @@ window.onload = async () => {
                     // Currently, Keplr doesn't support dynamic calculation of the gas prices based on on-chain data.
                     // Make sure that the gas prices are higher than the minimum gas prices accepted by chain validators and RPC/REST endpoint.
                     gasPriceStep: {
-                        low: 0.01,
-                        average: 0.025,
-                        high: 0.04
+                        low: 0.1,
+                        average: 0.25,
+                        high: 0.4
                     }
                 });
             } catch {
